@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Akshay P. V. - HR Manager, People & Administration, and Operations professional.">
+    <meta name="author" content="Akshay P. V.">
+
+    <title>Akshay P. V. | HR Manager | People & Operations</title>
+
+    <style>
+        :root {
+            --bg: #f7f8fa;
+            --surface: #ffffff;
+            --dark: #101828;
+            --text: #101828;
+            --muted: #667085;
+            --border: #e4e7ec;
+            --accent: #2563eb;
+            --accent-dark: #1d4ed8;
+            --soft-blue: #eff6ff;
+            --max-width: 1180px;
+            --radius: 18px;
+            --shadow: 0 15px 45px rgba(16, 24, 40, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(92%, var(--max-width));
+            margin: auto;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-inner {
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 27px;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #475467;
+            transition: 0.25s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-contact {
+            color: white !important;
+            background: var(--dark);
+            padding: 10px 17px;
+            border-radius: 9px;
+        }
+
+        .nav-contact:hover {
+            background: var(--accent);
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 100vh;
+            padding-top: 72px;
+            display: flex;
+            align-items: center;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(37, 99, 235, 0.12),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 10% 80%,
+                    rgba(37, 99, 235, 0.07),
+                    transparent 25%
+                ),
+                var(--bg);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.25fr 0.75fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--soft-blue);
+            color: var(--accent);
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin-bottom: 22px;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .hero h1 {
+            font-size: clamp(50px, 7vw, 84px);
+            line-height: 0.96;
+            letter-spacing: -5px;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero-title {
+            font-size: clamp(20px, 3vw, 29px);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            max-width: 680px;
+            color: var(--muted);
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 13px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px 21px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            border: 1px solid transparent;
+            transition: 0.25s;
+        }
+
+        .button-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .button-primary:hover {
+            background: var(--accent-dark);
+            transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            background: white;
+            border-color: var(--border);
+        }
+
+        .button-secondary:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .hero-card {
+            background: white;
+            padding: 35px;
+            border: 1px solid var(--border);
+            border-radius: 27px;
+            box-shadow: var(--shadow);
+        }
+
+        .profile-placeholder {
+            width: 155px;
+            height: 155px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: linear-gradient(
+                135deg,
+                #dbeafe,
+                #eff6ff
+            );
+
+            color: var(--accent);
+            font-size: 45px;
+            font-weight: 800;
+        }
+
+        .hero-card h3 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+
+        .hero-card > p {
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .contact-mini {
+            border-top: 1px solid var(--border);
+            margin-top: 25px;
+            padding-top: 18px;
+        }
+
+        .contact-mini div {
+            padding: 8px 0;
+            font-size: 14px;
+            color: #475467;
+        }
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
+
+        section {
+            padding: 100px 0;
+        }
+
+        .white-section {
+            background: white;
+        }
+
+        .section-header {
+            max-width: 750px;
+            margin-bottom: 50px;
+        }
+
+        .section-label {
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: clamp(34px, 5vw, 50px);
+            line-height: 1.08;
+            letter-spacing: -2.5px;
+            margin-bottom: 17px;
+        }
+
+        .section-description {
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 65px;
+        }
+
+        .about-text {
+            color: #475467;
+            font-size: 17px;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 17px;
+        }
+
+        .stat-card {
+            padding: 27px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+        }
+
+        .stat-number {
+            font-size: 35px;
+            font-weight: 800;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* =========================
+           EXPERTISE
+        ========================= */
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .expertise-card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 26px;
+            border-radius: var(--radius);
+            transition: 0.25s;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            border-color: #bfdbfe;
+        }
+
+        .expertise-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 43px;
+            height: 43px;
+
+            border-radius: 10px;
+            background: var(--soft-blue);
+            color: var(--accent);
+
+            font-size: 12px;
+            font-weight: 800;
+
+            margin-bottom: 18px;
+        }
+
+        .expertise-card h3 {
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .expertise-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* =========================
+           EXPERIENCE
+        ========================= */
+
+        .timeline {
+            max-width: 950px;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background: #dbeafe;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 46px;
+            margin-bottom: 55px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 0;
+            top: 7px;
+
+            width: 18px;
+            height: 18px;
+
+            border-radius: 50%;
+            background: var(--accent);
+
+            border: 4px solid white;
+            box-shadow: 0 0 0 2px #bfdbfe;
+        }
+
+        .timeline-date {
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .timeline-item h3 {
+            font-size: 25px;
+            margin-bottom: 3px;
+        }
+
+        .company {
+            color: var(--muted);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .timeline-item ul {
+            padding-left: 18px;
+            color: #475467;
+        }
+
+        .timeline-item li {
+            margin-bottom: 8px;
+        }
+
+        /* =========================
+           LEADERSHIP
+        ========================= */
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .leadership-card {
+            background: var(--dark);
+            color: white;
+            padding: 31px;
+            border-radius: var(--radius);
+        }
+
+        .leadership-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .leadership-card p {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        /* =========================
+           STRENGTHS
+        ========================= */
+
+        .strength-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .strength {
+            padding: 12px 18px;
+            border-radius: 999px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* =========================
+           EDUCATION
+        ========================= */
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .education-card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 30px;
+            border-radius: var(--radius);
+        }
+
+        .education-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .education-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* =========================
+           CERTIFICATIONS
+        ========================= */
+
+        .certification-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .certification-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 25px;
+        }
+
+        .certification-card strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .certification-card span {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* =========================
+           DIGITAL SKILLS
+        ========================= */
+
+        .skills-box {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 35px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-tag {
+            padding: 10px 15px;
+            border-radius: 8px;
+            background: var(--soft-blue);
+            color: #1e40af;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            background: var(--dark);
+            color: white;
+        }
+
+        .cta-content {
+            max-width: 850px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .cta .section-label {
+            color: #93c5fd;
+        }
+
+        .cta h2 {
+            font-size: clamp(36px, 5vw, 55px);
+            line-height: 1.08;
+            letter-spacing: -2.5px;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            color: #cbd5e1;
+            font-size: 17px;
+            margin-bottom: 28px;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .contact-card {
+            padding: 30px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+        }
+
+        .contact-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .contact-card p,
+        .contact-card a {
+            color: var(--muted);
+            font-size: 14px;
+            word-break: break-word;
+        }
+
+        .contact-card a:hover {
+            color: var(--accent);
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #080d18;
+            color: #94a3b8;
+            padding: 30px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .footer-name {
+            color: white;
+            font-weight: 700;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 950px) {
+
+            .hero-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 120px;
+                padding-bottom: 80px;
+            }
+
+            .hero-card {
+                max-width: 500px;
+                margin: auto;
+            }
+
+            .expertise-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .leadership-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .certification-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            section {
+                padding: 75px 0;
+            }
+
+            .hero h1 {
+                font-size: 54px;
+                letter-spacing: -3px;
+            }
+
+            .expertise-grid,
+            .education-grid,
+            .certification-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+    <div class="container nav-inner">
+
+        <a href="#home" class="logo">
+            AKSHAY<span>.</span>
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#expertise">Expertise</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#leadership">Leadership</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#contact" class="nav-contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <div class="eyebrow">
+                HR • PEOPLE • ADMINISTRATION • OPERATIONS
+            </div>
+
+            <h1>
+                Akshay<br>
+                <span>P. V.</span>
+            </h1>
+
+            <div class="hero-title">
+                HR Manager | People & Administration | Operations
+            </div>
+
+            <p class="hero-description">
+                Experienced management professional with 8+ years of
+                responsibility in centre management, people coordination,
+                administration and day-to-day operations.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#experience"
+                   class="button button-primary">
+                    View Experience
+                </a>
+
+                <a href="#contact"
+                   class="button button-secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <!-- PHOTO WILL BE ADDED LATER -->
+
+            <div class="profile-placeholder">
+                APV
+            </div>
+
+            <h3>
+                Management Professional
+            </h3>
+
+            <p>
+                People Management • HR Administration • Operations
+            </p>
+
+            <div class="contact-mini">
+
+                <div>
+                    📍 Kerala, India
+                </div>
+
+                <div>
+                    ✉ akshaypvarl@gmail.com
+                </div>
+
+                <div>
+                    ☎ +91-81 13020894
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="white-section" id="about">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                About Me
+            </div>
+
+            <h2 class="section-title">
+                People-focused management with operational experience.
+            </h2>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I am an experienced management professional with more than
+                    eight years of responsibility in centre management, people
+                    coordination, administration and daily operations.
+                </p>
+
+                <p>
+                    My experience includes coordinating teams, allocating
+                    responsibilities, managing schedules, maintaining employee
+                    and organisational records, communicating with stakeholders,
+                    resolving workplace issues and supporting management decisions.
+                </p>
+
+                <p>
+                    I bring strong leadership, interpersonal communication,
+                    organisational and problem-solving capabilities, combined
+                    with hands-on experience managing people and operations in
+                    fast-paced environments.
+                </p>
+
+            </div>
+
+
+            <div class="stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-number">
+                        8+
+                    </div>
+
+                    <div class="stat-label">
+                        Years of Management Responsibility
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-number">
+                        3
+                    </div>
+
+                    <div class="stat-label">
+                        Professional Career Areas
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-number">
+                        20+
+                    </div>
+
+                    <div class="stat-label">
+                        Management & HR Competencies
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-number">
+                        360°
+                    </div>
+
+                    <div class="stat-label">
+                        People & Operations Perspective
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EXPERTISE
+========================= -->
+
+<section id="expertise">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Management Expertise
+            </div>
+
+            <h2 class="section-title">
+                Core areas of professional capability.
+            </h2>
+
+            <p class="section-description">
+                A combination of people management, HR administration,
+                operational planning and stakeholder coordination.
+            </p>
+
+        </div>
+
+
+        <div class="expertise-grid">
+
+            <div class="expertise-card">
+
+                <div class="expertise-number">
+                    01
+                </div>
+
+                <h3>
+                    People Management
+                </h3>
+
+                <p>
+                    Staff coordination, responsibility allocation,
+                    communication and employee support.
+                </p>
+
+            </div>
+
+
+            <div class="expertise-card">
+
+                <div class="expertise-number">
+                    02
+                </div>
+
+                <h3>
+                    HR Administration
+                </h3>
+
+                <p>
+                    Employee documentation, attendance, leave coordination,
+                    records and administrative support.
+                </p>
+
+            </div>
+
+
+            <div class="expertise-card">
+
+                <div class="expertise-number">
+                    03
+                </div>
+
+                <h3>
+                    Operations Management
+                </h3>
+
+                <p>
+                    Daily operations, scheduling, planning, workflow
+                    monitoring and process implementation.
+                </p>
+
+            </div>
+
+
+            <div class="expertise-card">
+
+                <div class="expertise-number">
+                    04
+                </div>
+
+                <h3>
+                    Recruitment Support
+                </h3>
+
+                <p>
+                    Recruitment coordination, candidate communication,
+                    documentation and scheduling.
+                </p>
+
+            </div>
+
+
+            <div class="expertise-card">
+
+                <div class="expertise-number">
+                    05
+                </div>
+
+                <h3>
+                    Team Leadership
+                </h3>
+
+                <p>
+                    Coordinating teams, following up responsibilities
+                    and maintaining accountability.
+                </p>
+
+            </div>
+
+
+            <div class="expertise-card">
+
+                <div class="expertise-number">
+                    06
+                </div>
+
+                <h3>
+                    Stakeholder Management
+                </h3>
+
+                <p>
+                    Professional communication with staff, management,
+                    clients and other stakeholders.
+                </p>
+
+            </div>
+
+
+            <div class="expertise-card">
+
+                <div class="expertise-number">
+                    07
+                </div>
+
+                <h3>
+                    Issue Resolution
+                </h3>
+
+                <p>
+                    Practical handling of workplace concerns and
+                    operational challenges.
+                </p>
+
+            </div>
+
+
+            <div class="expertise-card">
+
+                <div class="expertise-number">
+                    08
+                </div>
+
+                <h3>
+                    Planning & Reporting
+                </h3>
+
+                <p>
+                    Scheduling, reporting, documentation and management
+                    decision support.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section class="white-section" id="experience">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Career Journey
+            </div>
+
+            <h2 class="section-title">
+                Professional experience.
+            </h2>
+
+            <p class="section-description">
+                A career combining management, people coordination,
+                administration, operations and client-facing responsibilities.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <!-- EXPERIENCE 1 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    MARCH 2018 — MAY 2026
+                </div>
+
+                <h3>
+                    Centre Manager
+                </h3>
+
+                <div class="company">
+                    Alpha Academy
+                </div>
+
+                <ul>
+
+                    <li>
+                        Led overall administration, people coordination
+                        and day-to-day operational management of the centre.
+                    </li>
+
+                    <li>
+                        Coordinated faculty and support staff, assigned
+                        responsibilities and followed up operational requirements.
+                    </li>
+
+                    <li>
+                        Acted as a key coordination point between staff,
+                        students and management.
+                    </li>
+
+                    <li>
+                        Managed work schedules, academic calendars,
+                        meetings, records and administrative processes.
+                    </li>
+
+                    <li>
+                        Maintained staff and student documentation,
+                        reports and operational records.
+                    </li>
+
+                    <li>
+                        Supported management in planning, decision-making,
+                        process improvement and resolution of operational issues.
+                    </li>
+
+                    <li>
+                        Handled staff and stakeholder concerns professionally
+                        and worked toward practical and timely solutions.
+                    </li>
+
+                    <li>
+                        Supported recruitment and admission coordination,
+                        communication, documentation and scheduling.
+                    </li>
+
+                    <li>
+                        During COVID-19, coordinated the transition from
+                        classroom operations to online and technology-assisted
+                        working.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- EXPERIENCE 2 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    OCTOBER 2018 — JANUARY 2026
+                </div>
+
+                <h3>
+                    Freelance 3D Artist & 3D Visualization Specialist
+                </h3>
+
+                <div class="company">
+                    Kapcher Designs India Pvt Ltd
+                </div>
+
+                <ul>
+
+                    <li>
+                        Managed multiple client projects from requirement
+                        understanding through delivery.
+                    </li>
+
+                    <li>
+                        Coordinated directly with clients regarding scope,
+                        timelines, revisions and deliverables.
+                    </li>
+
+                    <li>
+                        Planned workload and priorities to meet deadlines
+                        while maintaining quality standards.
+                    </li>
+
+                    <li>
+                        Maintained professional communication and handled
+                        project-related issues independently.
+                    </li>
+
+                    <li>
+                        Strengthened client management, time management,
+                        negotiation and problem-solving skills.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- EXPERIENCE 3 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    JULY 2014 — JANUARY 2018
+                </div>
+
+                <h3>
+                    Accountant
+                </h3>
+
+                <div class="company">
+                    Royal Aluminium Centre
+                </div>
+
+                <ul>
+
+                    <li>
+                        Maintained financial records, invoices, office
+                        documentation and bookkeeping records.
+                    </li>
+
+                    <li>
+                        Assisted with payroll-related activities and
+                        banking operations.
+                    </li>
+
+                    <li>
+                        Supported daily administration and maintained
+                        accurate and organised records.
+                    </li>
+
+                    <li>
+                        Prepared documentation and supported accurate
+                        financial reporting.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LEADERSHIP
+========================= -->
+
+<section id="leadership">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Leadership & HR
+            </div>
+
+            <h2 class="section-title">
+                Practical leadership in everyday operations.
+            </h2>
+
+        </div>
+
+
+        <div class="leadership-grid">
+
+            <div class="leadership-card">
+
+                <h3>
+                    People Coordination
+                </h3>
+
+                <p>
+                    Coordinating staff responsibilities, schedules and
+                    day-to-day activities while maintaining clear communication
+                    and accountability.
+                </p>
+
+            </div>
+
+
+            <div class="leadership-card">
+
+                <h3>
+                    Employee Communication
+                </h3>
+
+                <p>
+                    Regular communication with staff and management regarding
+                    work requirements, operational matters and workplace concerns.
+                </p>
+
+            </div>
+
+
+            <div class="leadership-card">
+
+                <h3>
+                    Administration
+                </h3>
+
+                <p>
+                    Strong experience in records, documentation, scheduling,
+                    reporting and office operations.
+                </p>
+
+            </div>
+
+
+            <div class="leadership-card">
+
+                <h3>
+                    Recruitment Support
+                </h3>
+
+                <p>
+                    Experience supporting recruitment and admission coordination,
+                    candidate communication and scheduling.
+                </p>
+
+            </div>
+
+
+            <div class="leadership-card">
+
+                <h3>
+                    Change Management
+                </h3>
+
+                <p>
+                    Coordinated staff activities and supported the transition
+                    to online working during COVID-19.
+                </p>
+
+            </div>
+
+
+            <div class="leadership-card">
+
+                <h3>
+                    Management Support
+                </h3>
+
+                <p>
+                    Assisted management with planning, reporting, coordination,
+                    operational decisions and process improvement.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STRENGTHS
+========================= -->
+
+<section class="white-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Key Strengths
+            </div>
+
+            <h2 class="section-title">
+                How I approach management.
+            </h2>
+
+        </div>
+
+
+        <div class="strength-list">
+
+            <span class="strength">
+                Leadership
+            </span>
+
+            <span class="strength">
+                Team Coordination
+            </span>
+
+            <span class="strength">
+                Communication
+            </span>
+
+            <span class="strength">
+                Decision Making
+            </span>
+
+            <span class="strength">
+                Problem Solving
+            </span>
+
+            <span class="strength">
+                Planning & Organisation
+            </span>
+
+            <span class="strength">
+                Conflict Handling
+            </span>
+
+            <span class="strength">
+                Time Management
+            </span>
+
+            <span class="strength">
+                Adaptability
+            </span>
+
+            <span class="strength">
+                Accountability
+            </span>
+
+            <span class="strength">
+                Stakeholder Coordination
+            </span>
+
+            <span class="strength">
+                Confidentiality
+            </span>
+
+            <span class="strength">
+                Multitasking
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EDUCATION
+========================= -->
+
+<section id="education">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Education
+            </div>
+
+            <h2 class="section-title">
+                Academic background.
+            </h2>
+
+        </div>
+
+
+        <div class="education-grid">
+
+            <div class="education-card">
+
+                <h3>
+                    National Institute of Open Schooling (NIOS)
+                </h3>
+
+                <p>
+                    Senior Secondary / Plus Two
+                </p>
+
+                <p>
+                    2018 • 55.14%
+                </p>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <h3>
+                    Government Higher Secondary School, Mathil
+                </h3>
+
+                <p>
+                    SSLC
+                </p>
+
+                <p>
+                    2012 • 82.2%
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CERTIFICATIONS
+========================= -->
+
+<section class="white-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Certifications
+            </div>
+
+            <h2 class="section-title">
+                Professional learning.
+            </h2>
+
+        </div>
+
+
+        <div class="certification-grid">
+
+            <div class="certification-card">
+
+                <strong>
+                    Certified Information Security Consultant
+                </strong>
+
+                <span>
+                    IIS-Pune • 86% • 2018
+                </span>
+
+            </div>
+
+
+            <div class="certification-card">
+
+                <strong>
+                    Certified Professional Hacker
+                </strong>
+
+                <span>
+                    IIS-Pune • 80% • 2018
+                </span>
+
+            </div>
+
+
+            <div class="certification-card">
+
+                <strong>
+                    Compliance
+                </strong>
+
+                <span>
+                    IIS-Pune • 90% • 2018
+                </span>
+
+            </div>
+
+
+            <div class="certification-card">
+
+                <strong>
+                    Unity Certifications
+                </strong>
+
+                <span>
+                    Unity Essentials • Junior Programmer • Creative Core
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DIGITAL SKILLS
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Digital & Office Skills
+            </div>
+
+            <h2 class="section-title">
+                Technology and workplace tools.
+            </h2>
+
+        </div>
+
+
+        <div class="skills-box">
+
+            <div class="skill-tags">
+
+                <span class="skill-tag">
+                    Microsoft Office
+                </span>
+
+                <span class="skill-tag">
+                    Google Workspace
+                </span>
+
+                <span class="skill-tag">
+                    Google Docs
+                </span>
+
+                <span class="skill-tag">
+                    Google Sheets
+                </span>
+
+                <span class="skill-tag">
+                    Digital Documentation
+                </span>
+
+                <span class="skill-tag">
+                    Data & Record Management
+                </span>
+
+                <span class="skill-tag">
+                    Online Communication Tools
+                </span>
+
+                <span class="skill-tag">
+                    Basic IT Troubleshooting
+                </span>
+
+                <span class="skill-tag">
+                    Git & GitHub
+                </span>
+
+                <span class="skill-tag">
+                    Digital Content Management
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CAREER OBJECTIVE
+========================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <div class="section-label">
+                Career Objective
+            </div>
+
+            <h2>
+                Building organised, productive and employee-focused workplaces.
+            </h2>
+
+            <p>
+                To take on an HR Manager or HR & Administration leadership role
+                where my experience in people coordination, administration,
+                operational management, communication and team leadership can
+                contribute to organisational effectiveness and growth.
+            </p>
+
+            <a href="mailto:akshaypvarl@gmail.com"
+               class="button button-primary">
+                Let's Connect
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Contact
+            </div>
+
+            <h2 class="section-title">
+                Let's connect professionally.
+            </h2>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <h3>
+                    Email
+                </h3>
+
+                <a href="mailto:akshaypvarl@gmail.com">
+                    akshaypvarl@gmail.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    Phone
+                </h3>
+
+                <p>
+                    +91-81 13020894
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    Location
+                </h3>
+
+                <p>
+                    Kerala, India
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    GitHub
+                </h3>
+
+                <a href="https://github.com/akshaypeevee"
+                   target="_blank"
+                   rel="noopener">
+                    github.com/akshaypeevee
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    Existing Portfolio
+                </h3>
+
+                <a href="https://sites.google.com/view/akshaypvarl"
+                   target="_blank"
+                   rel="noopener">
+                    Google Sites Portfolio
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    Professional Focus
+                </h3>
+
+                <p>
+                    HR Management • Administration • Operations
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div>
+            © 2026
+            <span class="footer-name">
+                Akshay P. V.
+            </span>
+        </div>
+
+        <div>
+            HR Manager • People & Administration • Operations
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
